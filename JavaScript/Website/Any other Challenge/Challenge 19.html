@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function greeting() {
+        let greetingNumber = Math.floor(Math.random()*4);
+        console.log (greetingNumber)
+            switch(greetingNumber){
+                case 0:
+                    console.log ("Ye bonehead, flat-nose, you think you can beat me?")
+                    break
+                case 1:
+                    console.log ("Smelly earthling, bald-head, come taste your defeat!")
+                    break
+                case 2:
+                    console.log ("Welcome back, lazybones, ye challenge me?")
+                    break
+                case 3:
+                    console.log ("How many times do ya wanna be beaten blue by me?")
+                    break
+                case 4:
+                    console.log ("Way to go, small human, wanna try again?")
+                    break                   
+                default:
+                    console.log ("We're sorry, but a bug occured. Please contact Aidan, and show him the program.")
+                    break
+            }
+    }
+</script>
+</head>
+<body>
+    this is a challenge page
+    <button type = "button" onclick = greeting()>Challenge 9: Schedule</button>
+</body>
+</html>

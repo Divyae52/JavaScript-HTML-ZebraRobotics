@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function temperature() {
+    let temperature = Math.floor(Math.random()*50);
+    console.log ("The temperature is " + temperature + " degrees celcius, so...");
+    if (temperature > 15 && temperature < 30) {
+        console.log ("You Can Go Out!");
+    }
+    else if (temperature < 15){
+        console.log ("It's Too Cold!");
+    }
+    else if (temperature > 30) {
+        console.log ("It's Too Hot!");
+    }
+
+}
+</script>
+</head>
+<body>
+    this is a challenge page
+    <button type = "button" onclick = temperature()>Challenge 6: Temperature</button>
+</body>
+</html>

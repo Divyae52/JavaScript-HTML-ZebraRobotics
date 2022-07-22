@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <title> JS Beginner-Rectangles </title>
+    <canvas id="canvas" width="1600" height="1200">
+</head> 
+<body>
+    <script>
+        var x = 120
+        var xxpos = 100
+        var yypos = 100
+        var rr = 100
+        var hh = 100
+        while (x>1) {
+        x=x-1
+        var xpos = Math.random*250
+        var ypos = Math.random*250
+        var r = Math.random()*100
+        var h = x-hh
+        //function circle(x, y, r, color, h) {
+        var canvas = document.getElementById("canvas")
+        var cx = canvas.getContext("2d")
+        var radius= Math.random()*120 //radius of circle
+        var rheight=Math.random()*100 //rectangle height
+        var xpos= (Math.random()*1400)+100 //x-Co-ordinate centre of the circle
+        var ypos= (Math.random()*1000)+100 //y-Co-ordinate centre of the circle
+        cx.beginPath()
+        cx.arc(xpos,ypos,radius, Math.PI*2,false)
+        cx.closePath()
+        cx.fillStyle='rgb(' + Math.random()*255 + ', ' + Math.random()*255 + ', ' + Math.random()*255 + ')'
+        cx.fill()
+        //}
+    //circle(100,100,100,"black",100)
+    //circle(100,100,50,"white",50)
+    //circle(100,100,25,"red",25)
+    //circle(100,100,12.5,"green",12.5)
+    //circle(100,100,6.25,"blue",6.25)
+    //circle(xpos,ypos,r,h)
+        }
+    </script>
+    <canvas id="canvas" width = 3000 height = 3000> </canvas>
+    <!--<button onclick = circle(100,100,100,black,100)>Challenge Canvas Circle</button>-->
+</body> 
+</html>

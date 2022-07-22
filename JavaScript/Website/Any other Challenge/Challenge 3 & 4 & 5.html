@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 3, 4, and 5. luckyNumber, hello, and rectangles </title>
+        <script>
+            //let name = prompt("What is your name?")
+            //Challenge 3 function
+            function luckyNumber() {
+                let number = Math.floor(Math.random()*100);
+                console.log ("Did you know that " + number + " is your LUCKY NUMBER!");
+            };
+
+            //Challenge 4 function
+            function hello() {
+                let name = prompt("What is your name?")
+                console.log ("Greetings " + name + ", how do you do?")
+            };
+
+            //Challenge 5 function
+            function rectanglePerimeter() {
+                let l = prompt("What is the Rectangle's Length? (in centimeters)");
+                var length = parseInt(l);
+                let w = prompt("What is the Rectangle's Width? (in centimeters)");
+                var width = parseInt(w);
+                let perimeter = (length+width)*2;
+                let area = length*width
+                console.log ("This rectangle has a perimeter of " + perimeter + "cm and an area of " + area + "cm.");
+            };
+            
+            //Challenge 31 function
+            function suprise() {
+                let suprise = Math.floor(Math.random()*250);
+                alert(suprise)
+            }
+            
+            //Challenge 32 function
+            function tip(moneay) {
+                moneay = moneay * 1.15
+                alert (moneay)
+            }
+        </script>
+    </head>
+    <body>
+        this is a challenge page
+        <button type = "button" onclick = luckyNumber()>Challenge 3: Lucky Number</button>
+        <br>
+        <button type = "button" onclick = hello()>Challenge 4: Hello</button>
+        <br>
+        <button type = "button" onclick = rectanglePerimeter()>Challenge 5: Rectangles</button>
+        <br>
+        <button type = "button" onclick = suprise()>Challenge 31: Form Functions - Random Values</button>
+        <br>
+        <form id = "tippingForm" onclick="tip(tippingForm.priceInput.value)">
+            <input type = "number" name = priceInput size = 30>
+            <input type = "button" name = "submitButton" value = "moneyyy"> 
+        </form>
+
+    </body>
+</html>

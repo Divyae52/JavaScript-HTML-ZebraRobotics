@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    let tries = 0
+    function areYouAllowedIn() {
+    if (tries > 3) {
+        //console.log ("You Have Tried Too Many Times. Please Leave Now.")
+    }
+    else {
+        //let aaggee = 0
+        let age = prompt("What's Your Age?");
+        //age = parseInt(aaggee);
+        console.log(age)
+
+        if (age < 13) {
+            // || = or
+            let parent = prompt("Do you have a Parent? (Answer with 1 as yes or 0 as no.)");
+            console.log(parent)
+            if (parent > 0 && parent < 2) {
+                console.log (parent + " You may go in then. Parent, please keep an eye on your kid.")
+            }
+            else if (parent < 1) {
+                console.log (parent + " Then you may NOT go inside. Either leave, or come back with your parent.")
+                //let tries = tries + 1
+            }
+            else {
+                console.log (parent + " YOU MAY ONLY ANSWER WITH 1 (as yes) OR 0 (as no), NOT ANYTHING ELSE!!!")
+            }
+        }
+        else if (age > 12){
+            console.log ("You can go in.")
+        }
+        else {
+            console.log ("You Didn't Enter A Number!")
+        }
+    }
+}
+</script>
+</head>
+<body>
+    this is a challenge page
+    <button type = "button" onclick = areYouAllowedIn()>Challenge 8: Football Stadium</button>
+</body>
+</html>

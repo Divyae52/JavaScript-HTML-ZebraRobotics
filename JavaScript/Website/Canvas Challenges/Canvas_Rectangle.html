@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> JS Beginner-Rectangles </title>
+
+    <!--<canvas id = "canvas" width = "400" height = "400">-->
+    <script>
+        function draw() {
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        var rwidth=1000000; //rectangle width
+        var rheight=1000000; //rectangle height
+        var xpos=0; //x-coordinate
+        var ypos=0; //y-coordinate
+        let award = prompt("Have you gotten an award? (Y or N)");
+        if (award == ("Y")) {
+            let score = prompt("What is your score?");
+            if (score > 80){
+                ctx.fillStyle = 'rgb(0, ' + score + ', 0)'
+            }
+            else {
+                ctx.fillStyle = 'red'
+            }
+        }
+        else {
+            ctx.fillStyle = 'rgb(255, 0, 0)'
+        }
+        ctx.fillRect(xpos, ypos, rwidth, rheight)
+        //let pass = (Math.floor(Math.random()*2))
+        //console.log (number);
+        //var canvas = document.getElementById("canvas");
+        //var ctx = canvas.getContext("2d");
+        //var rwidth=1000000; //rectangle width
+        //var rheight=1000000; //rectangle height
+        //var xpos=10; //x-coordinate
+        //var ypos=10; //y-coordinate
+        //console.log
+        //if (number==1){
+        //ctx.fillStyle = 'red'
+        //}
+        //else {
+        //ctx.fillStyle = "blue"
+        //}
+        //ctx.fillRect(xpos, ypos, rwidth, rheight)
+        }
+
+    </script>
+</head>
+<body onload="draw()">
+    <canvas id="canvas" width = 300 height = 300> </canvas>
+</body>
+</html>

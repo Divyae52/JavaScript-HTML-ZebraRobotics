@@ -1,0 +1,126 @@
+.transparent{
+    color: rgba(255, 255, 255, 0);
+}
+.width-100-img{
+    width: 100%;
+    float: middle;
+}
+.width-33{
+    float: left;
+    width: 33%;
+}
+.width-20{
+    float: left;
+    width: 19.75%;
+}
+.width-80{
+    float: left;
+    width: 79.75%;
+}
+.width-10{
+    float: left;
+    width: 9.75%;
+}
+.width-30{
+    float: left;
+    width: 29.75%;
+}
+.width-40{
+    float: left;
+    width: 39.75%;
+}
+.width-50{
+    float: left;
+    width: 49.75%;
+}
+.width-60{
+    float: left;
+    width: 59.75%;
+}
+.width-70{
+    float: left;
+    width: 69.75%;
+}
+.hero{
+    background-image: url("food.jpg");
+    background-color: lightseagreen;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.htext{
+    font-size: 90px;
+    height: 500px;
+    background-color: rgba(0,0,0,0.75);
+    margin: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    width:100%;
+    font-family: 'Paprika', cursive;
+    color: white;
+}
+nav{
+    background: linear-gradient(90deg, rgba(115, 0, 156, 0.75) 0%, rgba(250,0,0,0.75) 30%, rgba(237.5,135,10,0.75) 70%, rgba(236,226,0,0.75) 100%);
+    width: 100%;
+    margin: 10px;
+    color: black;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    color: black;
+}
+nav > ul > li > a {
+    color: black;
+    display: block;
+    padding: 35px;
+    text-decoration: none;
+    font-size: x-large;
+}
+h100{
+    font-size: 1px;
+}
+.header3{
+    text-align: center;
+    color: #053723;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 40px;
+}
+.header4{
+    color: #053723;
+    font-family: cursive;
+    font-size: 15px;
+}
+body{
+    background: rgb(255,188,217);
+    background: linear-gradient(0deg, rgba(255,188,217,1) 0%, rgba(192,236,200,1) 5%, rgba(153,195,255,1) 10%, rgba(153,195,255,1) 15%, rgba(192,236,200,1) 20%, rgba(255,188,217,1) 25%, rgba(255,188,217,1) 30%, rgba(192,236,200,1) 35%, rgba(153,195,255,1) 40%, rgba(153,195,255,1) 45%, rgba(192,236,200,1) 50%, rgba(153,195,255,1) 55%, rgba(153,195,255,1) 60%, rgba(192,236,200,1) 65%, rgba(255,188,217,1) 70%, rgba(255,188,217,1) 75%, rgba(192,236,200,1) 80%, rgba(153,195,255,1) 85%, rgba(153,195,255,1) 90%, rgba(192,236,200,1) 95%, rgba(255,188,217,1) 100%);
+}
+
+/* Alerts Code*/
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #35f565; /* Red */
+    color: black;
+    margin-bottom: 15px;
+  }
+  
+  /* The close button */
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  /* When moving the mouse over the close button */
+  .closebtn:hover {
+    color: black;
+  }
+/*End of Alert Code*/

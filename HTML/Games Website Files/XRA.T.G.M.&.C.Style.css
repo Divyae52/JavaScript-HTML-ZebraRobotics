@@ -1,0 +1,93 @@
+body{
+    /*background-color: #f2fcfe*/
+    /*background-color: #99c3ff;*/
+    /*background: rgb(255,188,217);*/
+    /*background: linear-gradient(0deg, rgba(255,188,217,1) 0%, rgba(153,195,255,1) 100%);*/
+    /*background: rgb(255,188,217);
+    background: linear-gradient(0deg, rgba(255,188,217,1) 0%, rgba(192,236,200,1) 50%, rgba(153,195,255,1) 100%);*/    
+    /*background: rgb(255,188,217);
+    background: linear-gradient(0deg,rgba(255,188,217,1) 0%, rgba(192,236,200,1) 12%, rgba(153,195,255,1) 25%, rgba(192,236,200,1) 50%, rgba(255,188,217,1) 75%, rgba(192,236,200,1) 87%, rgba(153,195,255,1) 100%);*/
+    background: rgb(255,188,217);
+    background: linear-gradient(0deg, rgba(255,188,217,1) 0%, rgba(192,236,200,1) 5%, rgba(153,195,255,1) 10%, rgba(153,195,255,1) 15%, rgba(192,236,200,1) 20%, rgba(255,188,217,1) 25%, rgba(255,188,217,1) 30%, rgba(192,236,200,1) 35%, rgba(153,195,255,1) 40%, rgba(153,195,255,1) 45%, rgba(192,236,200,1) 50%, rgba(153,195,255,1) 55%, rgba(153,195,255,1) 60%, rgba(192,236,200,1) 65%, rgba(255,188,217,1) 70%, rgba(255,188,217,1) 75%, rgba(192,236,200,1) 80%, rgba(153,195,255,1) 85%, rgba(153,195,255,1) 90%, rgba(192,236,200,1) 95%, rgba(255,188,217,1) 100%);
+}
+
+nav{
+    background-color: #ffc974;
+    width: 100%;
+    margin: 0px;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+nav > ul > li > a {
+    color:  #FF0000;
+    display: block;
+    padding: 35px;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+
+
+h1{
+    text-align: center;
+    color: #4E0082;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: xx-large;
+}
+
+h2{
+    text-align: center;
+    color: #4E0082;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: x-large;
+}
+h3{
+    text-align: center;
+    color: #053723;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: large;
+}
+h4{
+    text-align: center;
+    color: #FF0000;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: medium;
+}
+h5{
+    text-align: center;
+    color: #FF0000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+h6{
+    text-align: center;
+    color: #000000;
+    font-family: fantasy;
+    font-size: smaller;
+}
+p{
+    text-align: center;
+    color: #053723;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+}
+
+table, th, td{
+    border: 2px solid black;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td{
+    padding: 20px;
+    text-align: center;
+}
+/*
+th{
+    font-size: 20px;
+    background-color: #ffc974;
+}*/

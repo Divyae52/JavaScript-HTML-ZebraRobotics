@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> JS Beginner-Rectangles </title>
+    <script>
+        function draw() {
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        var rwidth=1000000;
+        var rheight=1000000;
+        var xpos=0;
+        var ypos=0;
+        let award = prompt("Have you gotten an award? (Y or N)");
+        if (award == ("Y")) {
+            let score = prompt("What is your score?");
+            if (score > 80){
+                ctx.fillStyle = 'green'
+            }
+            else {
+                ctx.fillStyle = 'red'
+            }
+        }
+        else {
+            ctx.fillStyle = 'red'
+        }
+        ctx.fillRect(xpos, ypos, rwidth, rheight)
+        }
+        function randomize(){
+            var xpos=0;
+            var ypos=0;
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            var randomNum = (Math.floor(Math.random()*80))+20
+            //var randomNum = (Math.floor(Math.random()*500))
+            var rgb1 = Math.floor(Math.random()*255)
+            var rgb2 = Math.floor(Math.random()*255)
+            var rgb3 = Math.floor(Math.random()*255)
+            ctx.fillStyle = "white"
+            ctx.fillRect(0, 0, 500, 500)
+            ctx.fillStyle = 'rgb('+ rgb1 +', '+ rgb2 +', '+ rgb3 +')'
+            ctx.fillRect(xpos, ypos, randomNum, randomNum)
+            console.log ("The RGB values are: " + rgb1 + ", " + rgb2 + " and " + rgb3 + ".")
+            console.log ("The size is a " + randomNum + " by " + randomNum + " square.")
+        }
+    </script>
+</head>
+<body onload="randomize()">
+    <canvas id="canvas" width = 500 height = 500> </canvas>
+    <button type = "button" onclick = randomize()>Canvas: Randomize</button>
+</body>
+</html>

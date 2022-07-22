@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="why.css"/>
+<script>
+    function tempconvertCF() {
+        var celcius = prompt("Degrees Celcius?");
+        var fahrenheit = (celcius*(9/5))+32
+        console.log (fahrenheit)
+    }
+    function tempconvertFC() {
+        var fahrenheit = prompt("Degrees Fahrenheit?");
+        var celcius = (fahrenheit-32)*(5/9)
+        console.log (celcius)
+    }
+</script>
+</head>
+<body>
+    this is a challenge page
+    <button type = "button" onclick = tempconvertCF()>Celcius to Fahrenheit</button>
+    <button type = "button" onclick = tempconvertFC()>Fahrenheit to Celcius</button>
+</body>
+</html>

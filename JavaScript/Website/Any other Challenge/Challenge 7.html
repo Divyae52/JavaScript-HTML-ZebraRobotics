@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function free_movie() {
+    let goalsScored = Math.floor(Math.random()*15);
+    let age = Math.floor(Math.random()*120);
+    if (goalsScored > 10 || age < 13) {
+         //|| = or
+        console.log ("You Get A Free Movie! This is because goalsScored is " + goalsScored + ", and age is " + age + ".");
+    }
+    else {
+        console.log ("You Have To Pay Full Price. This is because goalsScored is " + goalsScored + ", and age is " + age + ".")
+    }
+}
+</script>
+</head>
+<body>
+    this is a challenge page
+    <button type = "button" onclick = free_movie()>Challenge 7: Free Movie</button>
+</body>
+</html>

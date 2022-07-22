@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function namel() {
+            var name = prompt("What is your name?");
+            let namelength = name.length;
+            console.log (namelength)
+            switch(true){
+                case namelength > 15:
+                    console.log ("Wow! That’s a long name!")
+                    break
+                case namelength < 6:
+                    console.log ("a console message saying, the name is easy to remember, using the CONSOLE.LOG command.")
+                    break
+                case namelength < 15 && namelength > 5:
+                    console.log ("That’s not bad, I can remember the name.")
+                    break
+                default:
+                    console.log ("??? ... That's not a name??? (Hint: Names need to be NAMES)")
+                    break
+            }
+    }
+</script>
+</head>
+<body>
+    this is a challenge page
+    <button type = "button" onclick = namel()>Challenge 9: Schedule</button>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <title> JS Beginner-Rectangles </title>
+    <img src = "cause i have 2.JPG" width = 900 height = 750>
+
+</head> 
+<body>
+    <script>
+        alert("This page may keep on loading while this story occur Loading... (Press Ok to continue loading)")
+        alert("It is a dark and rainy night")
+        alert("You are leading a group of 100 warriors to retrieve some treasure")
+        alert("The treasure is up in the mountains, deep in the caves")
+        alert("Holy spirits have guarded the treasure for years by moving it around 3 caves")
+        alert("Fire-breathing dragons live in 2 of the caves while the 3rd has the treasure")
+        alert("You, as leader of the group, have to choose which cave to enter")
+        var Test = Math.floor(Math.random()*3)
+        alert (Test)
+        var Cave = prompt("Choose Cave *1, 2 or 3* (Note: Note not typing 1, 2 or 3 will cause you to run and die.)")
+        console.log (Cave)
+        console.log (Test)
+        if (Cave === (Test+1)){
+            alert("You collected the Treasure!")
+        }
+        else{
+            alert("You Died.")
+        }
+        console.log(Cave)
+        console.log(Test)
+    </script>
+</body> 
+</html>

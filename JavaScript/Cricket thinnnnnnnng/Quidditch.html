@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+    <title> Quidditch </title>
+
+</head> 
+<body>
+    <script>
+        var d = 0
+        var score1 = 0
+        var score2 = 0
+        var turn = 1
+        var tempscore=0
+        var goal = prompt("What is your game goal (please insert a number like 1, not one, as otherwise either the code will break or the game will never end.)")
+        var P1S = 0
+        var P2S = 0
+        var batter=0
+        var c1=0
+        var c2=0
+
+        function score (){
+            if(turn === 1){
+                d = Math.floor(Math.random()*6)
+                if(d===5){
+                    d=6
+                }
+                c1=c1+1
+                alert("bobobobob:"+c1)
+                if (c1 === 5){
+                    score1 = tempscore+score1
+                    tempscore = 0
+                    batter=batter+1
+                    P1S=score1
+                    alert("Batters dead: " + batter + ".")
+                    alert("It is now Player 2's Turn")
+                    turn = 2
+                    alert(turn)
+                    batter = 0
+                }
+                alert("You got a " + d + ".")
+                if (d === 0 && turn === 1){
+                    score1 = tempscore+score1
+                    tempscore = 0
+                    batter=batter+1
+                    P1S=score1
+                    alert("Batters dead: " + batter + ".")
+                    if (batter === 6){
+                        alert("It is now Player 2's Turn")
+                        turn = 2
+                        batter = 0
+                    }
+                    
+                }
+                else{
+                    if (turn==1){
+                        tempscore = tempscore+d
+                        turn = 1
+                        P1S=score1+tempscore
+                    }
+                }
+                if (score1+tempscore > goal){
+                    alert("PLAYER ONE WINS!")
+                }
+            }
+            else if (turn === 2){
+                d = Math.floor(Math.random()*6)
+            if(d===5){
+                d=6
+            }
+            c2=c2+1
+            if (c2 === 60){
+                score1 = tempscore+score1
+                tempscore = 0
+                batter=batter+1
+                P1S=score1
+                alert("GAME OVER")
+               }
+            alert("You got a " + d + ".")
+            if (d === 0 && turn === 2){
+                alert("It is now Player 1's Turn")
+                score2 = tempscore+score2
+                tempscore = 0
+                P2S=score2
+                batter = batter+1
+                if (batter === 6){
+                    alert("GAME OVER")
+                }
+            }
+            else{
+                tempscore = tempscore+d
+                turn = 2
+                P2S=score2+tempscore
+            }
+            if (score1+tempscore > goal){
+                alert("PLAYER TWO WINS!")
+            }
+            }
+            else{
+                alert("Something went wrong")
+            }
+            var reciptCost1=document.getElementById("P2S")
+            reciptCost1.innerHTML = P2S
+            var reciptCost2=document.getElementById("P1S")
+            reciptCost2.innerHTML = P1S
+        }
+        function turnFun(){
+            alert("It is currently player " + turn + "'s turn.")
+        }
+        function goalFun (){
+            alert ("The goal for this game is " + goal + ".")
+        }
+    </script>
+    How to Play:
+        <button type = "button" onclick = score()>Score</button>
+        <button type = "button" onclick = turnFun()>Turn</button>
+        <button type = "button" onclick = goalFun()>Goal</button>
+        <br>
+
+    P1 Score: <p id = P1S>0</p>
+    P1-1
+    P1-2
+    P1-3
+    P1-4
+    P1-5
+    P1-6
+    P2 Score: <p id = P2S>0</p>
+    P2-1
+    P2-2
+    P2-3
+    P2-4
+    P2-5
+    P2-6
+    </p>
+    <img src = BackQ.jpg width = 1500 height = 700>
+</body> 
+</html>

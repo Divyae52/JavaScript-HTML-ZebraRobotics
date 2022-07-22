@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(() => {
+        console.log("a")
+        $('#button').click(() => {
+            $('#Lorem_Ipsum').text("")
+        });
+        $('#button2').click(() => {
+            $('#Lorem_Ipsum').text("Lorem ipsum...")
+        });
+        $('#button3').click(() => {
+            test = Math.floor(Math.random()*6)
+            console.log (test)
+            if (test===0){
+                $('#j0k3r').text("I'm so good at sleeping. I can do it with my eyes closed.")
+            }
+            else if (test===1){
+                $('#j0k3r').text("My boss told me to have a good day.. so I went home.")
+            }
+            else if (test===2){
+                $('#j0k3r').text("Why is Peter Pan always flying? He neverlands.")
+            }
+            else if (test===3){
+                $('#j0k3r').text("A woman walks into a library and asked if they had any books about paranoia. The librarian says They are right behind you!")
+            }
+            else if (test===4){
+                $('#j0k3r').text("When you look really closely, all mirrors look like eyeballs.")
+            }
+            else if (test===5){
+                $('#j0k3r').text("What do you call a guy with a rubber toe? Roberto.")
+            }
+        });
+    })
+    </script>
+</head>
+<body>
+    <button type ="button" id ="button"> POOF </button>
+    <button type ="button" id ="button2"> POOF BACK </button>
+    <button type ="button" id ="button3"> Tell Me A Joke </button>    
+    <p id = "Lorem_Ipsum">
+        Lorem ipsum...
+    </p>
+    <p id = "j0k3r"></p>
+
+</body>

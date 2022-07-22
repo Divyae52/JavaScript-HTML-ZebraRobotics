@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+    function schedule() {
+        //if (prompt(("So... you want me to come to " + prompt("What is it? .. You want to invite me to an event? What event is it?") + "?")) = "yes"){
+            var day = prompt("What day is " + prompt("What event are you inviting me to?") + " (The day of the week)");
+            switch(day){
+                case "Sunday":
+                    console.log ("Sorry, but Sunday I have to go to church and do chores around the house. Also, it's our family's family day, so I need to stay home. Sorry. Maybe I can come somewhere on Saturday? That seems to be clear.")
+                    break
+                case "Saturday":
+                    console.log ("Sure, I can come Saturday! Just remember for the future, only invite me to saturday events")
+                    break
+                case "Monday":
+                    console.log ("Sorry, but I have school that day, and have to do a lot of homework later. Maybe I can come somewhere on Saturday? That seems to be clear.")
+                    break
+                case "Tuesday":
+                    console.log ("Sorry, but I have school that day, and have to do a lot of homework later. Maybe I can come somewhere on Saturday? That seems to be clear.")
+                    break
+                case "Wednesday":
+                    console.log ("Sorry, but I have school that day, and have to do a lot of homework later. Maybe I can come somewhere on Saturday? That seems to be clear.")
+                    break
+                case "Thursday":
+                    console.log ("Sorry, but I have school that day, and have to do a lot of homework later. Maybe I can come somewhere on Saturday? That seems to be clear.")
+                    break
+                case "Friday":
+                    console.log ("Sorry, but I have school that day, and have to do a lot of homework later. Maybe I can come somewhere on Saturday? That seems to be clear.")
+                    break
+                default:
+                    console.log ("??? ... That's not a day of the week??? (Hint: Days need to be worded like this: Monday)")
+                    break
+            }
+            /*  if (day > 1 && day < 7){
+                console.log ("Sorry, but I have school that day, and have to do a lot of homework later. Maybe I can come somewhere on Saturday? That seems to be clear.")
+            }
+            if (day > 0 && day < 2){
+                console.log ("Sorry, but Sunday I have to go to church and do chores around the house. Also, it's our family's family day, so I need to stay home. Sorry. Maybe I can come somewhere on Saturday? That seems to be clear.")
+            } 
+            if (day > 6 && day < 8){
+                console.log ("Sure, I can come Saturday! Just remember for the future, only invite me to saturday events")
+            }  */
+        //}
+    }
+</script>
+</head>
+<body>
+    this is a challenge page
+    <button type = "button" onclick = schedule()>Challenge 9: Schedule</button>
+</body>
+</html>

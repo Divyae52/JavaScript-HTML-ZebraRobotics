@@ -1,0 +1,15 @@
+table, th, td{
+    border: 2px solid black;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td{
+    padding: 20px;
+    text-align: center;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > th, .table-striped > tbody > tr:nth-child(2n+1) > td{
+    background-color: rgba(104, 104, 104, 0.5);
+}

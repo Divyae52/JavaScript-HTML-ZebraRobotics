@@ -1,0 +1,23 @@
+<html> 
+    <head> 
+        <script>
+    /*This function displays a message to the user saying "Hello" when called*/ 
+        function changeTitle()
+        {
+        //getting variable for the heading in the body 
+        var headerHandle = document.getElementById("mainTitle"); 
+        //getting the heading text 
+        var headerText = headerHandle.innerHTML; 
+        //using prompt to get the user's name 
+        var userName = prompt("What is your name?"); 
+        //Change the title to the current text with an added comma and space then the users name
+        headerHandle.innerHTML = headerText + ", " + userName;
+        }
+    </script> 
+    </head> 
+    <body> <centre>
+    <h1 id = "mainTitle"> Welcome</h1> <!-- When the user hits this button the function is called-->
+    <button onclick="changeTitle()"> Add Name</button> 
+    </centre> 
+    </body> 
+</html>

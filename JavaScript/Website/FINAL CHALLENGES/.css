@@ -1,0 +1,181 @@
+body{
+    background: linear-gradient(90deg, rgba(186,205,235,1) 0%, rgba(190,207,236,1) 12%, rgba(200,213,239,1) 25%, rgba(214,221,243,1) 37%, rgba(251,239,254,1) 58%, rgba(254,241,255,1) 62%, rgba(254,241,255,1) 75%, rgba(254,241,255,1) 88%, rgba(254,241,255,1) 100%);
+}
+
+nav{
+    background-color: #ffc974;
+    width: 100%;
+    margin: 0px;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+nav > ul > li > a {
+    color:  #FF0000;
+    display: block;
+    padding: 35px;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+
+
+h1{
+    text-align: center;
+    color: #4E0082;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: xx-large;
+}
+
+h2{
+    text-align: center;
+    color: #4E0082;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: x-large;
+}
+h3{
+    text-align: center;
+    color: #053723;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: large;
+}
+h4{
+    text-align: center;
+    color: #FF0000;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: medium;
+}
+h5{
+    text-align: center;
+    color: #FF0000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+h6{
+    text-align: right;
+    color: #000000;
+    font-family: fantasy;
+    font-size: smaller;
+}
+p{
+    color: #053723;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+}
+table, th, td{
+    border: 2px solid black;
+}
+table{
+    border-collapse: collapse;
+}
+th, td{
+    padding: 20px;
+}
+/*
+th{
+    font-size: 20px;
+    background-color: #ffc974;
+}*/
+footer{
+    margin-top: 70px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    color: rgb(197, 153, 40);
+}
+details{
+    text-align: center;
+    font-size: large;
+    color: darkorchid;
+    font-family: cursive;
+}   
+#hero{
+        background-image: url("Nintendo Consoles.gif");
+        background-color: lightseagreen;
+        height: 750px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+#htext{
+        font-size: 90px;
+        height: 350px;
+        background-color: rgba(0,0,0,0.75);
+        margin: 0px;
+        padding-top: 150px;
+        padding-bottom: 25px;
+        text-align: center;
+        width:100%;
+        font-family: 'Paprika', cursive;
+        color: white;
+}
+.Titles{
+    text-align: center;
+    color: #4E0082;
+    font-family: 'Paprika', 'Zen Tokyo Zoo', cursive;
+    font-size: xx-large;
+}
+.Descriptions{
+    text-align: center;
+    font-weight: lighter;
+    width: 100%;
+}
+.AllFancy{
+   text-shadow: 2px 4px 3px #777777; 
+}
+.width-33{
+    float: left;
+    width: 33%;
+}
+.width-20{
+    float: left;
+    width: 19.75%;
+}
+.width-80{
+    float: left;
+    width: 79.75%;
+}
+.ACH-1color{
+    color: #053723;
+}
+.ACH-2color{
+    color: #FF0000;
+}
+.ACH-3color{
+    color: #d6459f;
+    text-align: center;
+}
+
+/* CSS */
+.button-42 {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #FF7E31, #E62C03);
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 40px;
+  line-height: 40px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 10%;
+  z-index: 9;
+  border: 0;
+  transition: box-shadow .2s;
+}
+
+.button-42:hover {
+  box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}

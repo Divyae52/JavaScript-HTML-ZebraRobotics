@@ -1,0 +1,15 @@
+ul {
+    padding-left: 40px;
+    list-style-type: none;
+}
+ul li {
+    padding-left: 40px;
+    background-image: url(newspaper-folded.png);
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+}
+
+p{
+    text-align:center;
+}

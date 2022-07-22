@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> JS Beginner-Rectangles </title>
+    <script>
+        function draw() {
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        var rwidth=1000000;
+        var rheight=1000000;
+        var xpos=0;
+        var ypos=0;
+        let award = prompt("Have you gotten an award? (Y or N)");
+        if (award == ("Y")) {
+            let score = prompt("What is your score?");
+            if (score > 80){
+                ctx.fillStyle = 'green'
+            }
+            else {
+                ctx.fillStyle = 'red'
+            }
+        }
+        else {
+            ctx.fillStyle = 'red'
+        }
+        ctx.fillRect(xpos, ypos, rwidth, rheight)
+        }
+        function randomize(){
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            var randomNum = (Math.floor(Math.random()*80))+20
+            var rgb1 = Math.floor(Math.random()*255)
+        }
+    </script>
+</head>
+<body onload="draw()">
+    <canvas id="canvas" width = 300 height = 300> </canvas>
+</body>
+</html>
