@@ -37,12 +37,22 @@ function add_item_to_list(itemName){
         render_list()
         })
     }
-
+function get_item_id_from_element(item) {
+    return $(item)
+     .closest('li')
+     .data('item-id');
+}
 function handle_check_item() {
     // this function is for when users click "check" button on a shopping list item.
-    console.log('`handle_check_item` ran')
-
+        $('.js-shopping-list').on('click', `.js-item-toggle`, event => {
+        console.log('`handle_check_item` ran');
+        const itemid = get_item_id_from_element(event.currentTarget);
+        console.log(itemid);
+        //thing = !thing;
+    });
 }
+
+
 
 function handle_delete_item() {
     // this function is for when users want to delete a shopping list item
