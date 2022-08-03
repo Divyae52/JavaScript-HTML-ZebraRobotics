@@ -47,6 +47,7 @@ function handle_check_item() {
         $('.js-shopping-list').on('click', `.js-item-toggle`, event => {
         console.log('`handle_check_item` ran');
         const itemid = get_item_id_from_element(event.currentTarget);
+        
         console.log(itemid);
         //thing = !thing;
     });
