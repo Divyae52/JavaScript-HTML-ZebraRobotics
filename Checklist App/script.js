@@ -17,11 +17,26 @@ function render_list() {
 
 }
 
-function handle_add_item() {
-    // this function will add a new shopping list item
-    console.log('`handle_add_item` ran')
+function add_item_to_list(itemName){
+    console.log(`Adding "${itemName}" to shopping list`) ;
+    // add an item to the CHECKLIST
+    list.push({name: itemName, checked: false})
 
 }
+    function handle_add_item() {
+        $('#js-shopping-list-form').submit(function(event) {
+        event.preventDefault();
+        console.log('`handle_add_item` ran');
+        //get the value in the form input element
+        //reset the value to ""
+        // add the value to list (use above empty function)
+        //render list (use existing function)
+        item = $("#cost").val();
+        console.log(item)
+        add_item_to_list(item)
+        render_list()
+        })
+    }
 
 function handle_check_item() {
     // this function is for when users click "check" button on a shopping list item.
@@ -53,10 +68,8 @@ function generate_list_string(shopping_list) {
     console.log("Generating shopping list element")
     let htmlThing = " ";
     for (let i = 0; i<shopping_list.length; i++) {
-        console.log(shopping_list[i])
         htmlThing += generate_item_element(shopping_list[i]);
     }
-    console.log(htmlThing)
     return htmlThing;
     }
 
@@ -76,26 +89,5 @@ function generate_item_element(item) {
         </li>`;
 }
 
-function add_item_to_list(itemName){
-    console.log(`Adding "${itemName}" to shopping list`) ;
-    // add an item to the CHECKLIST
-
-
-}
-    function handle_add_item() {
-        $('#js-shopping-list-form').submit(function(event) {
-        event.preventDefault();
-        console.log('`handle_add_item` ran');
-        //get the value in the form input element
-        //reset the value to ""
-        // add the value to list (use above empty function)
-        //render list (use existing function)
-        var reciptCost=document.getElementById("cost")
-        item = reciptCost.innerHTML
-        reciptCost.innerHTML = ""
-        list.push({name: ""})
-        })
-    }
-    
 //  when the page loads, call ~handleShoppingList™
 (handle_shopping_list());
