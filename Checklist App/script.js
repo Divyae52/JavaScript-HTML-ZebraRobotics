@@ -17,6 +17,7 @@ function render_list() {
 
 }
 
+//
 function add_item_to_list(itemName){
     console.log(`Adding "${itemName}" to shopping list`) ;
     // add an item to the CHECKLIST
@@ -31,24 +32,33 @@ function add_item_to_list(itemName){
         //reset the value to ""
         // add the value to list (use above empty function)
         //render list (use existing function)
-        item = $("#cost").val();
+        item = $("# ").val();
         console.log(item)
         add_item_to_list(item)
         render_list()
         })
     }
-function get_item_id_from_element(item) {
+function get_item_name_from_element(item) {
     return $(item)
      .closest('li')
      .data('item-id');
 }
+
 function handle_check_item() {
     // this function is for when users click "check" button on a shopping list item.
+        console.log (list)
         $('.js-shopping-list').on('click', `.js-item-toggle`, event => {
+            console.log (list)
         console.log('`handle_check_item` ran');
-        const itemid = get_item_id_from_element(event.currentTarget);
-        
-        console.log(itemid);
+        console.log (list)
+        const itemid = get_item_name_from_element(event.currentTarget);
+        console.log (list)
+        for (let t = 0; t<list.length; t++) {
+            if (list[t]["name"]=itemid){
+                list[t]["checked"] = !list[t]["checked"]
+            }
+        }
+        console.log (list)
         //thing = !thing;
     });
 }
