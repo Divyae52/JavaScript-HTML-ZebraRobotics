@@ -1,7 +1,8 @@
 function encrypt() {
-  word = prompt("Enter what to encrypt. (only numbers or letters)");
-  splited = word.split("")
-  alert (splited);
+  let word = prompt("Enter what to encrypt. (only numbers or letters)");
+  let splited = word.split("");
+  //console.log(splited);
+  // alert (splited);
   for (let i = 0; i < splited.length; i++) {
     if (splited[i] == "a") {
       splited[i] = 'b'
@@ -111,7 +112,89 @@ function encrypt() {
     else if (splited[i] == '0') {
       splited[i] = '9'
     }
+    else if (splited[i] == "A") {
+      splited[i] = "B"
+    }
+    else if (splited[i] == "B") {
+      splited[i] = 'C'
+    }
+    else if (splited[i] == 'C') {
+      splited[i] = 'D'
+    }
+    else if (splited[i] == 'D') {
+      splited[i] = 'E'
+    }
+    else if (splited[i] == 'E') {
+      splited[i] = 'F'
+    }
+    else if (splited[i] == 'F') {
+      splited[i] = 'G'
+    }
+    else if (splited[i] == 'G') {
+      splited[i] = 'H'
+    }
+    else if (splited[i] == 'H') {
+      splited[i] = 'I'
+    }
+    else if (splited[i] == 'I') {
+      splited[i] = 'J'
+    }
+    else if (splited[i] == 'J') {
+      splited[i] = 'K'
+    }
+    else if (splited[i] == 'K') {
+      splited[i] = 'L'
+    }
+    else if (splited[i] == 'L') {
+      splited[i] = 'M'
+    }
+    else if (splited[i] == 'M') {
+      splited[i] = 'N'
+    }
+    else if (splited[i] == 'N') {
+      splited[i] = 'O'
+    }
+    else if (splited[i] == 'O') {
+      splited[i] = 'P'
+    }
+    else if (splited[i] == 'P') {
+      splited[i] = 'Q'
+    }
+    else if (splited[i] == 'Q') {
+      splited[i] = 'R'
+    }
+    else if (splited[i] == 'R') {
+      splited[i] = 'S'
+    }
+    else if (splited[i] == 'S') {
+      splited[i] = 'T'
+    }
+    else if (splited[i] == 'T') {
+      splited[i] = 'U'
+    }
+    else if (splited[i] == 'U') {
+      splited[i] = 'V'
+    }
+    else if (splited[i] == 'V') {
+      splited[i] = 'W'
+    }
+    else if (splited[i] == 'W') {
+      splited[i] = 'X'
+    }
+    else if (splited[i] == 'X') {
+      splited[i] = 'Y'
+    }
+    else if (splited[i] == 'Y') {
+      splited[i] = 'Z'
+    }
+    else if (splited[i] == 'Z') {
+      splited[i] = 'A'
+    }
+    else {
+      splited[i] = splited[i]
+    }
 
   }
-  alert (splited)
+  let text = splited.join('');
+  alert(text)
 }
