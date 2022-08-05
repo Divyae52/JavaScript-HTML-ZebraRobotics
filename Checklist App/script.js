@@ -32,7 +32,7 @@ function add_item_to_list(itemName){
         //reset the value to ""
         // add the value to list (use above empty function)
         //render list (use existing function)
-        item = $("# ").val();
+        item = $(cost).val();
         console.log(item)
         add_item_to_list(item)
         render_list()
@@ -46,30 +46,48 @@ function get_item_name_from_element(item) {
 
 function handle_check_item() {
     // this function is for when users click "check" button on a shopping list item.
-        console.log (list)
+        
         $('.js-shopping-list').on('click', `.js-item-toggle`, event => {
-            console.log (list)
+        
         console.log('`handle_check_item` ran');
-        console.log (list)
+
         const itemid = get_item_name_from_element(event.currentTarget);
-        console.log (list)
+        console.log (itemid)
+        
         for (let t = 0; t<list.length; t++) {
-            if (list[t]["name"]=itemid){
-                list[t]["checked"] = !list[t]["checked"]
+            if (list[t]["name"]==itemid){
+                list[t]["checked"] = !(list[t]["checked"])
             }
         }
-        console.log (list)
+        
         //thing = !thing;
+        render_list()
+    });
+}
+function handle_delete_item() {
+    // this function is for when users click "check" button on a shopping list item.
+        
+        $('.js-shopping-list').on('click', `.js-item-delete`, event => {
+        
+        console.log('`handle_delete_item` ran');
+
+        const itemid = get_item_name_from_element(event.currentTarget);
+        console.log (itemid)
+        
+        for (let a = 0; a<list.length; a++) {
+            if (list[a]["name"]==itemid){
+                list.splice(a, 1)
+            }
+        }
+        
+        //thing = !thing;
+        render_list()
     });
 }
 
 
 
-function handle_delete_item() {
-    // this function is for when users want to delete a shopping list item
-    console.log('`handle_delete_item` ran')
 
-}
 
 function handle_shopping_list() {
     // this function will be our callback when the page loads. it's responsible for
@@ -96,9 +114,8 @@ function generate_list_string(shopping_list) {
 
 function generate_item_element(item) {
     return `
-        <li data-item-id="${item.id}">
-        <span class="shopping-item js-shopping-item ${item.checked ?
-            "shopping-item_checked" : ''}">${item.name}</span>
+        <li data-item-id="${item.name}">
+        <span class="shopping-item js-shopping-item ${item.checked ? "shopping-item__checked" : ''}">${item.name}</span>
         <div class="shopping-item-controls">
         <button class="shopping-item-toggle js-item-toggle">
         <span class="button-label">check</span>
@@ -107,7 +124,20 @@ function generate_item_element(item) {
         <span class="button-label">delete</span>
         </button>
         </div>
-        </li>`;
+        </li>`
+}
+function generate_item_element(item) {
+    return `
+        <li data-item-id="${item.name}">
+        <span class="shopping-item js-shopping-item ${item.checked ? "shopping-item__checked" : ''}">${item.name}</span>
+        <div class="shopping-item-controls">
+        <button class="shopping-item-toggle js-item-toggle">
+        <span class="button-label">check</span>
+        </button>
+        <button class="shopping-item-delete js-item-delete">
+        <span class="button-label">delete</span></button>
+        </div>
+        </li>`
 }
 
 //  when the page loads, call ~handleShoppingList™

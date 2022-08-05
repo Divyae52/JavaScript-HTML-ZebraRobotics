@@ -5,7 +5,7 @@
     let tries = 0
     function areYouAllowedIn() {
     if (tries > 3) {
-        //console.log ("You Have Tried Too Many Times. Please Leave Now.")
+        console.log ("You Have Tried Too Many Times. Please Leave Now.")
     }
     else {
         //let aaggee = 0
@@ -22,7 +22,7 @@
             }
             else if (parent < 1) {
                 console.log (parent + " Then you may NOT go inside. Either leave, or come back with your parent.")
-                //let tries = tries + 1
+                tries = tries + 1
             }
             else {
                 console.log (parent + " YOU MAY ONLY ANSWER WITH 1 (as yes) OR 0 (as no), NOT ANYTHING ELSE!!!")

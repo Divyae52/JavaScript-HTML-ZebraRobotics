@@ -1,42 +1,69 @@
-
 * {
- box-sizing: border-box;
+    box-sizing: border-box;
 }
+
+#js-shopping-list-form {
+    text-align: center;
+}
+
 body {
- font-family: 'Roboto', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("https://img.freepik.com/premium-vector/realistic-colorful-confetti-transparent-background-concept-happy-birthday-party-holidays_269299-164.jpg?w=1060" );
+    font-size: xx-large;
 }
+
 button, input[type="text"] {
- padding: 5px;
+    padding: 5px;
 }
+
 button:hover {
- cursor: pointer;
+    cursor: pointer;
 }
+
 .hidden {
- display: none;
+    display: none;
 }
+
 #shopping-list-item {
- width: 250px;
+    width: 250px;
 }
+
 .container {
- max-width: 600px;
- margin: 0 auto;
+    max-width: 600px;
+    margin: 0 auto;
 }
+
 .shopping-list {
- list-style: none;
- padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
-.shopping-list > li {
- margin-bottom: 20px;
- border: 1px solid grey;
- padding: 20px;
+
+.shopping-list>li {
+    margin-bottom: 20px;
+    border: 1px solid rgba(8, 11, 182, 0.701);
+    padding: 20px;
 }
+
 .shopping-item {
- display: block;
- color: grey;
- font-style: italic;
- font-size: 20px;
- margin-bottom: 15px;
+    display: block;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
+
 .shopping-item__checked {
- text-decoration: line-through;
+    text-decoration: line-through;
 }
+
+.shopping-item-toggle {
+    background-color: #2db451;
+    border: 0px solid #5c9e56;
+}
+
+.shopping-item-delete {
+    float: right;
+    background-color: #9f6b6b;
+    border: 0px solid #a52dfa;
+} 
