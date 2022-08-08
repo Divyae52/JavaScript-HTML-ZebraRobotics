@@ -1,12 +1,15 @@
+let valid = 0
+let splited = []
 function readNum() {
 
 }
 
 function checkValid() {
+  valid = 0
   let word = $(cost).val();
-  let splited = word.split("");
+  splited = word.split("");
   //console.log(splited);
-  alert (splited);
+  //alert (splited);
   /*for (let i = 0; i < splited.length; i++) {
     if (splited[i] == "a") {
       splited[i] = 'b'
@@ -198,16 +201,60 @@ function checkValid() {
       splited[i] = splited[i]
     }*/
 
-  }
+  
   //}
-for (let i = 0; i < splited.length; i++) {
-  if (splitted[i]!==1&&splitted[i]!==2&&splitted[i]!==3&&splitted[i]!==4&&splitted[i]!==5&&splitted[i]!==6&&splitted[i]!==7&&splitted[i]!==8&&splitted[i]!==9&&splitted[i]!==0) {
-    alert("Your Input Is In The Wrong Format")
+if (splited.length !== 16){
+  alert("wround number of numbers")
+  return;
+}
+else{
+  for (let i = 0; i < splited.length; i++) {
+    if (splited[i]!=="1"&&splited[i]!=="2"&&splited[i]!=="3"&&splited[i]!=="4"&&splited[i]!=="5"&&splited[i]!=="6"&&splited[i]!=="7"&&splited[i]!=="8"&&splited[i]!=="9"&&splited[i]!=="0") {
+      alert("Your Input Is In The Wrong Format")
+      return;
+    }
+    else{ /*alert ("good")*/ }
+
+      
+let text = splited.join('');
+//alert(text)
+valid = 1
+    }
   }
 }
-let text = splited.join('');
-  alert(text)
 
 function runAlg() {
-
+  if (valid == 0){
+    alert("Invalid Number")
+  }
+  else{
+    var card = splited
+    //part 1
+    card[1]=((card[1])*2)
+    card[3]=((card[3])*2)
+    card[5]=((card[5])*2)
+    card[7]=((card[7])*2)
+    card[9]=((card[9])*2)
+    card[11]=((card[11])*2)
+    card[13]=((card[13])*2)
+    card[15]=((card[15])*2)
+    card[0]=((card[0])*1)
+    card[2]=((card[2])*1)
+    card[4]=((card[4])*1)
+    card[6]=((card[6])*1)
+    card[8]=((card[8])*1)
+    card[10]=((card[10])*1)
+    card[12]=((card[12])*1)
+    card[14]=((card[14])*1)
+    //part 2
+    console.log (card)
+    let sum1 = card[1]+card[2]+card[3]+card[4]+card[5]+card[6]+card[7]+card[8]+card[9]+card[10]+card[11]+card[12]+card[13]+card[14]+card[15]+card[0]
+    console.log (sum1)
+    if (sum1 == (Math.round(sum1/10))*10){
+      alert ("VALID CARD")
+    }
+    else{
+      alert ("Invalid Card")
+    }
+  }
 }
